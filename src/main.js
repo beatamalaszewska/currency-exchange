@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Vuex from "vuex";
 import App from "./App.vue";
+import store from "./store/store";
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
@@ -21,22 +22,9 @@ const router = new VueRouter({
     { path: "/rate_table", component: Table },
   ],
 });
-const store = new Vuex.Store({
-  state: {
-    eur: null,
-    gbp: null,
-    usd: null,
-    chf: null,
-  },
-  mutations: {
-    add(curr, rate) {
-      this.state.curr = rate;
-    },
-  },
-});
 
 new Vue({
   router,
-  store,
+  store: store,
   render: (h) => h(App),
 }).$mount("#app");

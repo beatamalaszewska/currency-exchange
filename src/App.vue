@@ -43,8 +43,8 @@ body {
 }
 #app {
   font-family: Arial;
-  color: #8ebff1;
-  height: 100%;
+  background-color: #8ebff1;
+  height: 100vh;
   width: 80%;
   right: 0;
   display: inline-block;
@@ -94,11 +94,13 @@ td {
   width: 50%;
   border: 1px solid #000;
 }
-#add_currency {
+#add_currency,
+#converter {
   text-align: center;
 }
 .rate,
-.choose {
+.choose,
+.amount {
   width: 75%;
   margin: 0 auto;
   padding: 10px;
@@ -112,5 +114,11 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+.result {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
 }
 </style>

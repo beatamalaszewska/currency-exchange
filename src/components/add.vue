@@ -5,7 +5,7 @@
       <select
         id="currencies"
         name="curenncieslist"
-        form="currenciesform"
+        form="currenciesForm"
         v-model="selectedCur"
       >
         <option value="eur">EUR</option>
@@ -15,9 +15,9 @@
       </select>
     </div>
     <div class="rate">
-      <form action="" id="currenciesform">
-        <label for="crate">Rate:</label>
-        <input type="number" id="crate" name="crate" v-model="savedRate" />
+      <form action="" id="currenciesForm">
+        <label for="cRate">Rate:</label>
+        <input type="number" id="crate" name="cRate" v-model="savedRate" />
       </form>
     </div>
     <button type="submit" v-on:click="saveRate">Save currency</button>

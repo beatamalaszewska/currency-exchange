@@ -1,4 +1,5 @@
 # currency-exchange
+Project created for the purposes of the recruitment process.
 
 ## Project setup
 ```
